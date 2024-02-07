@@ -1,0 +1,13 @@
+.home-background {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(100deg, #E9E9E9, #E9E9E9 48.9%, #000000 49%, #000000);
+}
+
+.daniel-bg {
+  background-image: url('/assets/greenBackground.jpg');
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}

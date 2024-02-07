@@ -1,0 +1,55 @@
+<!-- TODO: backdrop blur? -->
+<!-- TODO: color input? -->
+<!-- NavBar -->
+<nav class="font-[Italiana] absolute bg-transparent backdrop-blur-[1px] drop-shadow text-2xl md:text-2xl lg:text-3xl">
+  <div class="w-screen">
+    <div class="flex justify-between items-center w-[90%] ml-[5%] mr-[5%] mt-6">
+
+      <div class="flex">
+        <!-- Logo -->
+        <a [routerLink]="['/routePath']" routerLinkActive="router-link-active">
+          Daniel Cobos
+        </a>
+      </div>
+
+      <!-- Primary nav -->
+      <div class="hidden md:flex w-[40%] justify-between">
+        @for (item of menuItems; track item.title) {
+          <a [routerLink]="[item.url]"
+            class="group transition-all duration-300 ease-in-out"
+            >
+            <span routerLinkActive="bg-[length:100%_2px]"
+              class="text-white bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+              {{item.title}}
+            </span>
+          </a>
+        }
+      </div>
+
+      <!-- Mobile button goes here -->
+      <div class="md:hidden flex items-center text-white hover:text-gray-400 px-2">
+        <button (click)="toggleMobileMenu(true)">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+    <!-- TODO: Dropdown animation -->
+    <!-- Mobile menu -->
+    @if (showMobileMenu) {
+      <div class="md:hidden w-[42%] ml-[50%] mr-[8%] ">
+        @for (item of menuItems; track item.title) {
+          <a [routerLink]="item.url"
+            (click)="toggleMobileMenu()"
+            class="block backdrop-blur-[1px] py-4 text-end text-white hover:text-gray-400"
+          >
+            {{item.title}}
+          </a>
+        }
+      </div>
+    }
+
+  </div>
+</nav>
