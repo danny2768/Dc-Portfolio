@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import gsap from 'gsap';
 import { MenuItems } from '../../interfaces/menu-item.interface';
 import { PortfolioService } from '../../services/portfolio.service';
@@ -14,6 +14,9 @@ export class NavBarComponent {
   public menuItems: MenuItems[];
   private navHidden: boolean = false;
   private lastScrollPosition: number = 0;
+
+  @Input()
+  public textWhite: boolean = false;
 
   constructor(private portfolioService: PortfolioService) {
     this.menuItems = this.portfolioService.getMenuItems();

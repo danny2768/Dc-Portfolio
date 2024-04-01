@@ -13,8 +13,7 @@ const routes: Routes = [
       { path: 'home', component: HomePageComponent },
       // { path: 'projects', component:ProjectsPageComponent },
       { path: 'projects', redirectTo: '/under-development', pathMatch: 'full' },
-      // { path: 'resume', component: ResumePageComponent },
-      { path: 'resume', redirectTo: '/under-development', pathMatch: 'full' },
+      { path: 'resume', component: ResumePageComponent },
       { path: '**', redirectTo: 'home' }
     ]
   }

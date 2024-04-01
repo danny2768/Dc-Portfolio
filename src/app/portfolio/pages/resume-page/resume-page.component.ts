@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   styleUrl: './resume-page.component.css'
 })
 export class ResumePageComponent {
-
+  pdfSrc = "/assets/resume/Daniel_Cobos-Resume(en).pdf";
 }
