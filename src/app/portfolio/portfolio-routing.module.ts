@@ -11,8 +11,10 @@ const routes: Routes = [
     component: LayoutPageComponent,
     children: [
       { path: 'home', component: HomePageComponent },
-      { path: 'projects', component:ProjectsPageComponent },
-      { path: 'resume', component: ResumePageComponent },
+      // { path: 'projects', component:ProjectsPageComponent },
+      { path: 'projects', redirectTo: '/under-development', pathMatch: 'full' },
+      // { path: 'resume', component: ResumePageComponent },
+      { path: 'resume', redirectTo: '/under-development', pathMatch: 'full' },
       { path: '**', redirectTo: 'home' }
     ]
   }
