@@ -1,18 +1,17 @@
 <!-- TODO: Fix responsive -->
-@if (LanguageEnglish) {
-  <pdf-viewer
-              [src]="pdfSrcEn"
-              [render-text]="true"
-              [original-size]="true"
-              [fit-to-page]="true"
-              style="width: 1100px; height: 1075px "
-  ></pdf-viewer>
-} @else {
-  <pdf-viewer
-              [src]="pdfSrcEs"
-              [render-text]="true"
-              [original-size]="true"
-              [fit-to-page]="true"
-              style="width: 1100px; height: 1075px "
-  ></pdf-viewer>
-}
+<pdf-viewer
+      [src]="LanguageEnglish ? pdfSrcEn : pdfSrcEs"
+      [original-size]="true"
+      [render-text]="true"
+      [rotation]="0"
+      [show-all]="true"
+      [fit-to-page]="false"
+      [zoom]="zoomSize"
+      [zoom-scale]="'page-width'"
+      [stick-to-page]="true"
+      [external-link-target]="'blank'"
+      [autoresize]="true"
+      [show-borders]="false"
+      class="pdf-viewer"
+      [style]="heightVh"
+></pdf-viewer>
