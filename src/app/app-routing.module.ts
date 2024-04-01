@@ -11,11 +11,10 @@ const routes: Routes = [
   {
     path: 'under-development',
     component: UnderDevelopmentComponent,
-
   },
   {
     path: '**',
-    redirectTo: 'under-development',
+    redirectTo: 'portfolio',
   }
 ];
 
