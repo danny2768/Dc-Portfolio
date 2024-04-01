@@ -10,6 +10,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
+import { ResumeEnComponent } from './components/resume-en/resume-en.component';
+import { ResumeEsComponent } from './components/resume-es/resume-es.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,14 @@ import { ResumePageComponent } from './pages/resume-page/resume-page.component';
     HomePageComponent,
     ResumePageComponent,
     ProjectsPageComponent,
+    ResumeEnComponent,
+    ResumeEsComponent,
   ],
   imports: [
     CommonModule,
     PortfolioRoutingModule,
     PdfViewerModule,
+    SharedModule
   ],
 })
 export class PortfolioModule {}

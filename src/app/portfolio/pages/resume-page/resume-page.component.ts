@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   templateUrl: './resume-page.component.html',
-  styleUrl: './resume-page.component.css'
+  styleUrls: ['./resume-page.component.css']
 })
 export class ResumePageComponent {
-  pdfSrc = "/assets/resume/Daniel_Cobos-Resume(en).pdf";
+  public resumeEn: boolean = true;
+
+  public resumeEnPath: string = '/assets/resume/Daniel_Cobos-Resume(en).pdf';
+  public resumeEsPath: string = '/assets/resume/Daniel_Cobos-Resume.pdf';
+
 }

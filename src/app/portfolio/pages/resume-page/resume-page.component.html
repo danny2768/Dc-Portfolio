@@ -1,13 +1,46 @@
 <portfolio-nav-bar></portfolio-nav-bar>
 <!-- TODO: different languages tab -->
 <div class="bg-[#E9E9E9] pt-20">
+  <!-- Language selector -->
+  <div class="w-[80%] mx-auto flex justify-center gap-12 my-6 text-neutral-500 font-medium">
+    <!-- English -->
+    <div class="pb-1 border-b-2 border-gray-500 hover:border-gray-600 hover:text-neutral-600">
+      <button (click)="resumeEn = true">Resume - English</button>
+    </div>
+    <!-- Spanish -->
+    <div class="pb-1 border-b-2 border-gray-500 hover:border-gray-600 hover:text-neutral-600">
+      <button (click)="resumeEn = false">Resume - Spanish</button>
+    </div>
+  </div>
+
+  <!-- Resume -->
   <div class="flex justify-center">
-    <pdf-viewer
-              [src]="pdfSrc"
-              [render-text]="true"
-              [original-size]="true"
-              [fit-to-page]="true"
-              style="width: 1100px; height: 1100px "
-    ></pdf-viewer>
+    @if(resumeEn){
+      <div class="py-2">
+
+        <div class="flex justify-center mb-4">
+          <shared-download-button [filePath]="resumeEnPath"></shared-download-button>
+        </div>
+
+        <portfolio-resume-en></portfolio-resume-en>
+
+        <div class="flex justify-center mb-4">
+          <shared-download-button [filePath]="resumeEnPath"></shared-download-button>
+        </div>
+      </div>
+    } @else {
+      <div class="py-2">
+
+        <div class="flex justify-center mb-4">
+          <shared-download-button [filePath]="resumeEsPath"></shared-download-button>
+        </div>
+
+        <portfolio-resume-es></portfolio-resume-es>
+
+        <div class="flex justify-center mb-4">
+          <shared-download-button [filePath]="resumeEsPath"></shared-download-button>
+        </div>
+      </div>
+    }
   </div>
 </div>
