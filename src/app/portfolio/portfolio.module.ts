@@ -10,8 +10,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
-import { ResumeEnComponent } from './components/resume-en/resume-en.component';
-import { ResumeEsComponent } from './components/resume-es/resume-es.component';
+import { ResumePDFComponent } from './components/resumePDF/resumePDF.component';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
@@ -22,8 +21,7 @@ import { SharedModule } from '../shared/shared.module';
     HomePageComponent,
     ResumePageComponent,
     ProjectsPageComponent,
-    ResumeEnComponent,
-    ResumeEsComponent,
+    ResumePDFComponent,
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { PortfolioService } from '../../services/portfolio.service';
 
 @Component({
   templateUrl: './resume-page.component.html',
@@ -7,7 +8,14 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class ResumePageComponent {
   public resumeEn: boolean = true;
 
-  public resumeEnPath: string = '/assets/resume/Daniel_Cobos-Resume(en).pdf';
-  public resumeEsPath: string = '/assets/resume/Daniel_Cobos-Resume.pdf';
+  public resumeEnPath: string;
+  public resumeEsPath: string;
+
+  constructor( private portfolioService: PortfolioService) {
+    this.resumeEnPath = this.portfolioService.getResumeEnPath();
+    this.resumeEsPath = this.portfolioService.getResumeEsPath();
+  }
+
+
 
 }
