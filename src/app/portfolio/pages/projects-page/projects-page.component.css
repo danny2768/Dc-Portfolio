@@ -1,0 +1,7 @@
+.daniel-bg {
+  background-image: url('/assets/greenBackground.jpg');
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}

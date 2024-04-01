@@ -1,1 +1,111 @@
-<p>projects-page works!</p>
+<portfolio-nav-bar></portfolio-nav-bar>
+<div class="font-[Michroma]">
+  <div class="container mx-auto">
+    <div class="text-5xl sm:text-6xl md:flex">
+      <!-- Column 1 (left) -->
+      <div class="pt-20 pl-0 md:pl-16 md:w-1/2 md:pt-40">
+        <!-- Title -->
+        <div class="w-[80%] mx-[10%] text-center md:w-[100%] md:mx-auto lg:text-start">
+          <div class="lg:ml-6">
+            <h1 class="mb-10">Welcome to</h1>
+            <div class="text-center md:text-end">
+              my <span class="daniel-bg">projects</span>
+            </div>
+          </div>
+        </div>
+        <!-- Quote -->
+        <div class="flex md:hidden lg:flex font-[Montserrat] italic text-xl mt-12 xl:mt-16 w-[80%] mx-[10%] md:w-[100%] md:mx-auto">
+          <div class="text-justify">
+            Explore my portfolio showcasing frontend development expertise, encompassing responsive designs, intuitive user interfaces, and dynamic web applications enriched with API integrations for real-time data retrieval and interactive map functionalities.
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 (right) -->
+      <div class="w-[90%] mx-[5%] sm:w-[80%] sm:mx-[10%] md:mx-0 md:w-1/2 md:pt-24">
+        <!-- <img class="mt-4 shadow-sm md:w-[88%] md:mx-[6%]" srcset="assets/CoverPhoto/CoverPhoto.png" alt="CoverPhoto"> -->
+        <img class="mt-4 md:w-[80%] md:mx-auto" srcset="/assets/icons/rocket.svg" alt="Developer Photo">
+    </div>
+  </div>
+  <div class="hidden md:flex px-8 lg:hidden font-[Montserrat] italic text-xl mt-12 xl:mt-16 w-[80%] mx-[10%] md:w-[100%] md:mx-auto">
+    <div class="text-justify">
+      Explore my portfolio showcasing frontend development expertise, encompassing responsive designs, intuitive user interfaces, and dynamic web applications enriched with API integrations for real-time data retrieval and interactive map functionalities.
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-gradient-to-b from-white to-[#E9E9E9] font-[Montserrat] pt-12 pb-16">
+  <!-- Title -->
+  <div class="text-center font-bold text-4xl">
+    <span class="border-2 border-black py-2 px-6">RECENT WORK</span>
+  </div>
+  <!-- Text -->
+  <div class="w-fit md:w-[90%] mx-auto mt-12">
+    <div class="flex flex-wrap justify-center gap-2 md:gap-6 mt-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white max-w-sm lg:max-w-md shadow-md rounded-lg p-4 m-4">
+        <!-- Icon -->
+        <div class=" mx-auto rounded-lg overflow-hidden"><img src="/assets/projects/iotagile.png" alt="IoT Agile project"></div>
+        <!-- Information -->
+        <div class="text-center">
+          <!-- Title -->
+          <div class="text-xl lg:text-2xl font-bold mt-6">IoT Agile</div>
+          <!-- Description -->
+          <div class="pt-2 text-gray-600 text-justify">
+            Utilizing Angular and Tailwind CSS, this project exemplifies a harmonious fusion of robust functionality and modern aesthetics. With its seamless navigation and responsive design, users can effortlessly engage with the company's offerings across various devices.
+          </div>
+          <!-- Buttons -->
+          <div class="flex justify-center gap-4 pt-4">
+            <a href="https://github.com/danny2768/IoT-Agile" target="_blank" class="bg-gradient-to-tr from-[#003EFF] to-[#4EC1F3] text-white font-bold py-2 px-4 rounded">Github</a>
+            <a href="https://www.iot-agile.com" target="_blank" class="bg-gradient-to-tl from-[#003EFF] to-[#4EC1F3] text-white font-bold py-2 px-4 rounded">Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white max-w-sm lg:max-w-md shadow-md rounded-lg p-4 m-4">
+        <!-- Icon -->
+        <div class=" mx-auto rounded-lg overflow-hidden"><img src="/assets/projects/tuhome.png" alt="Tu-Home project"></div>
+        <!-- Information -->
+        <div class="text-center">
+          <!-- Title -->
+          <div class="text-xl lg:text-2xl font-bold mt-6">Tu-Home</div>
+          <!-- Description -->
+          <div class="pt-2 text-gray-600 text-justify">
+            Designed with Angular and Bootstrap, this project revolutionizes real estate management by providing comprehensive oversight of every aspect, from users to properties to contracts. Seamlessly interfacing with a backend powered by Spring Boot, the website elegantly presents data in a visually captivating manner.
+          </div>
+          <!-- Buttons -->
+          <div class="flex justify-center gap-4 pt-4">
+            <a href="https://github.com/danny2768/Tu-Home-AdminFront" target="_blank" class="bg-gradient-to-tr from-[#003EFF] to-[#4EC1F3] text-white font-bold py-2 px-4 rounded">Github</a>
+            <a href="https://mellow-cupcake-948cc5.netlify.app/auth/signIn" target="_blank" class="bg-gradient-to-tl from-[#003EFF] to-[#4EC1F3] text-white font-bold py-2 px-4 rounded">Demo</a>
+            <a href="https://youtu.be/bER_5C0LNZ8?feature=shared" target="_blank" class="bg-gradient-to-tl from-[#003EFF] to-[#4EC1F3] text-white font-bold py-2 px-4 rounded">Video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white max-w-sm lg:max-w-md shadow-md rounded-lg p-4 m-4">
+        <!-- Icon -->
+        <div class=" mx-auto rounded-lg overflow-hidden"><img src="/assets/projects/trackinguis.png" alt="TrackingUIS project"></div>
+        <!-- Information -->
+        <div class="text-center">
+          <!-- Title -->
+          <div class="text-xl lg:text-2xl font-bold mt-6">TrackingUIS</div>
+          <!-- Description -->
+          <div class="pt-2 text-gray-600 text-justify">
+            Powered by Angular and Bootstrap, this project seamlessly integrates with Mapbox to provide real-time tracking of university buses within the campus. Leveraging data from a Firebase Realtime Database, users can conveniently monitor bus locations, ensuring efficient transportation across the campus. Experience enhanced connectivity and navigation with this dynamic web solution.
+          </div>
+          <!-- Buttons -->
+          <div class="flex justify-center gap-4 pt-4">
+            <a href="https://github.com/danny2768/TrackingUIS" target="_blank" class="bg-gradient-to-tr from-[#003EFF] to-[#4EC1F3] text-white font-bold py-2 px-4 rounded">Github</a>
+            <a href="https://bejewelled-conkies-244139.netlify.app/home" target="_blank" class="bg-gradient-to-tl from-[#003EFF] to-[#4EC1F3] text-white font-bold py-2 px-4 rounded">Demo</a>
+            <a href="https://youtu.be/KRqTKAYwkEs?si=8WvcJo_jaDoUFmiy" target="_blank" class="bg-gradient-to-tl from-[#003EFF] to-[#4EC1F3] text-white font-bold py-2 px-4 rounded">Video</a>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+</div>
