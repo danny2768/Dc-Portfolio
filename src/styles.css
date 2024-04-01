@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom scrollbar - Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #777777 #484848;
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Italiana';
   src: url('assets/fonts/Italiana-Regular.ttf') format('truetype');
