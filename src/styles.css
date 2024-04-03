@@ -10,6 +10,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overscroll-behavior-y: none;
+}
+
 @font-face {
   font-family: 'Italiana';
   src: url('assets/fonts/Italiana-Regular.ttf') format('truetype');
