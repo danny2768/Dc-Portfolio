@@ -1,23 +1,25 @@
 <portfolio-nav-bar></portfolio-nav-bar>
-<!-- TODO: different languages tab -->
 <div class="bg-[#E9E9E9] pt-20">
   <!-- Language selector -->
   <div class="w-[80%] mx-auto flex justify-center gap-12 my-6 text-neutral-500 font-medium">
-    <!-- English -->
-    <div class="pb-1 border-b-2 border-gray-500 hover:text-neutral-600"
-      [ngClass]="{
-        'border-blue-500': resumeEn,
-      }">
-      <button (click)="resumeEn = true">Resume - English</button>
-    </div>
-    <!-- Spanish -->
-    <div class="pb-1 border-b-2 border-gray-500 hover:text-neutral-600"
-      [ngClass]="{
-        'border-blue-500': !resumeEn,
-      }">
-      <button (click)="resumeEn = false">Resume - Spanish</button>
-    </div>
+  <!-- English -->
+  <div
+    class="pb-1 border-b-2 hover:text-neutral-600"
+    [ngClass]="{
+      'border-blue-500': resumeEn,
+      'border-gray-500': !resumeEn,
+    }"
+  >
+    <button (click)="resumeEn = true">Resume - English</button>
   </div>
+  <!-- Spanish -->
+  <div
+    class="pb-1 border-b-2 border-gray-500 hover:text-neutral-600"
+    [ngClass]="{
+      'border-blue-500': !resumeEn,
+      'border-gray-500': resumeEn,
+    }"
+  >
 
   <!-- Resume -->
   <div class="flex justify-center">
