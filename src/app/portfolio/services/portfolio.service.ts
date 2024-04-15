@@ -12,8 +12,8 @@ export class PortfolioService {
     {title: 'Resume', url: '/portfolio/resume'},
   ];
 
-  private resumeEnPath: string = '/assets/resume/Daniel_Cobos-Resume(en).pdf';
-  private resumeEsPath: string = '/assets/resume/Daniel_Cobos-Resume.pdf';
+  private resumeEnPath: string = '/assets/resume/DanielCobos-Resume(en).pdf';
+  private resumeEsPath: string = '/assets/resume/DanielCobos-Resume(es).pdf';
 
   constructor() { }
 

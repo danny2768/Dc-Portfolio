@@ -4,14 +4,8 @@ import { PortfolioService } from '../../services/portfolio.service';
 @Component({
   selector: 'portfolio-resume-pdf',
   templateUrl: './resumePDF.component.html',
-  styles: `
-  .pdf-viewer {
-    width: 80vw;
-    display: block;
-    margin: 0 auto;
-  }
-  `,
 })
+
 export class ResumePDFComponent {
   @Input({ required: true })
   public LanguageEnglish!: boolean;
