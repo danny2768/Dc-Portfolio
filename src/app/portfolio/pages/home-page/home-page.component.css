@@ -1,10 +1,10 @@
 .home-background {
   width: 100vw;
-  max-height: 800px;
+  max-height: 1000px;
   background: linear-gradient(100deg, #E9E9E9, #E9E9E9 48.9%, #000000 49%, #000000);
 }
 
-@media (max-height: 800px) {
+@media (max-height: 1000px) {
   .home-background {
     min-height: 100vh; /* Apply min-height only when viewport height is less than max-height */
   }
@@ -15,4 +15,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
